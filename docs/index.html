@@ -1,0 +1,33 @@
+<html lang="en">
+	<head>
+        <link rel="stylesheet" href="css/basics.css">
+		<link rel="stylesheet" href="libraries/highlightjs/styles/vs2015.css">
+        <script src="js/config.js"></script>
+        <script src="js/articlesetup.js"></script>
+        <script src="js/IncludeHtml.js"></script>
+        <script src="libraries/highlightjs/highlight.pack.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <body>
+        <div IncludeHtml="html/header.html"></div>
+
+        <div class="outerBody">
+            <div IncludeHtml="html/articlebody.html"></div>
+        </div>
+
+        <div IncludeHtml="html/footer.html"></div>
+    </body>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <script>
+		window.onload = function(){
+            IncludeHTML();
+            SetupArticle();
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+		}
+	</script>
+</html>

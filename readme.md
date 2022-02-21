@@ -1,0 +1,1 @@
+An article on this library's usage can be found here: https://will-o-wisp.github.io/Observer/
