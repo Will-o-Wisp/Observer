@@ -1,0 +1,6 @@
+.vs
+bin/
+obj/
+WpfTest/
+
+docs/python/__pycache__

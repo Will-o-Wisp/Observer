@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Observation</AssemblyName>
+    <RootNamespace>Observation</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>WispTales.Observer</PackageId>
+    <Company>WispTales</Company>
+    <Authors>Manos Chatzianestis</Authors>
+    <Product>Observer</Product>
+    <Description>This library provides an easy way to track changes to your properties.</Description>
+    <Copyright>Manos Chatzianestis</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl />
+    <PackageTags>C# Reflection INotifyPropertyChanged INotifyCollectionChanged</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Version>1.1.8</Version>
+    <ApplicationIcon></ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.DispatchProxy" Version="4.7.1" />
+  </ItemGroup>
+
+</Project>
